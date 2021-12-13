@@ -42,19 +42,13 @@ const showStatus = (status: number) => {
   }
   return `${message}，请检查网络或联系管理员！`;
 };
-
 const service = axios.create({
   // 联调
   baseURL: process.env.NODE_ENV === "production" ? `/v1` : "/v1",
   // baseURL: "/api",
-  headers: {
-    "Content-Type": "application/json;charset=utf-8",
-    // get: {
-    // },
-    // post: {
-    //   "Content-Type": "application/json;charset=utf-8",
-    // },
-  },
+  // headers: {
+  //   "Content-Type": "application/json;charset=utf-8",
+  // },
   // 是否跨站点访问控制请求
   withCredentials: true,
   timeout: 30000,
