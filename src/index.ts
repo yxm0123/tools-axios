@@ -44,14 +44,14 @@ const showStatus = (status: number) => {
 };
 const service = axios.create({
   // 联调
-  baseURL: process.env.NODE_ENV === "production" ? `/v1` : "/v1",
+  baseURL: '',
   // baseURL: "/api",
   // headers: {
   //   "Content-Type": "application/json;charset=utf-8",
   // },
   // 是否跨站点访问控制请求
   withCredentials: true,
-  timeout: 30000,
+  timeout: 50000,
   transformRequest: [
     (data) => {
       data = JSON.stringify(data);

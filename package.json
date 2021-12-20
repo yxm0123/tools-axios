@@ -1,6 +1,6 @@
 {
   "name": "@lola/tools-axios",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": false,
   "main": "dist/toolsAxios.common.js",
   "types": "dist/lib/index.d.ts",
